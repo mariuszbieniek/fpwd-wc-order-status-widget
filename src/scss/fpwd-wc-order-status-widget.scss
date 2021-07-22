@@ -1,0 +1,56 @@
+.fpwd-wc-order-status-widget {
+  &__error {
+    display: block;
+    color: #d63638;
+    margin-top: 5px;
+  }
+
+  &__form {
+    padding: 30px;
+
+    label {
+      display: block;
+      font-size: 1.2rem;
+    }
+
+    input {
+      border: 1px solid #eaeaea;
+      min-width: 250px;
+      height: 30px;
+      padding: 0 10px;
+      font-size: 1.2rem;
+      margin-bottom: 5px;
+
+      @media all and (max-width: 398px) {
+        width: 100%;
+      }
+    }
+
+    button[type=submit] {
+      display: block;
+      height: 30px;
+      padding: 0 10px;
+      background: #00aeef;
+      color: #ffffff;
+      font-size: 1.2rem;
+      border: 1px solid #00aeef;
+      vertical-align: top;
+
+      &:hover {
+        background: #ffffff;
+        color: #00aeef;
+      }
+
+      &:disabled {
+        background: #eaeaea;
+        border-color: #eaeaea;
+        color: #000000;
+      }
+    }
+  }
+
+  &__result {
+    font-size: 1.2rem;
+    margin-top: 5px;
+  }
+}
