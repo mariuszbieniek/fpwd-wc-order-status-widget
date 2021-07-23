@@ -92,7 +92,7 @@ class WC_Order_Status_Check_Widget extends WP_Widget {
                         name="<?php echo sprintf('%s-order-number', self::NAMESPACE); ?>"
                         required
                     />
-                    <label>E-mail</label>
+                    <label><?php echo esc_html__('E-mail', self::NAMESPACE); ?></label>
                     <input
                         type="email"
                         name="<?php echo sprintf('%s-user-email', self::NAMESPACE); ?>"
